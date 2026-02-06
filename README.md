@@ -32,7 +32,7 @@ The following Cloudflare features used by this project have free tiers:
 This project packages OpenClaw to run in a [Cloudflare Sandbox](https://developers.cloudflare.com/sandbox/) container, providing a fully managed, always-on deployment without needing to self-host. Optional R2 storage enables persistence across container restarts.
 
 ## Architecture
-
+ 
 ![moltworker architecture](./assets/architecture.png)
 
 ## Quick Start
