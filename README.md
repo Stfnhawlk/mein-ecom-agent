@@ -23,7 +23,7 @@ The following Cloudflare features used by this project have free tiers:
 
 [OpenClaw](https://github.com/openclaw/openclaw) (formerly Moltbot, formerly Clawdbot) is a personal AI assistant with a gateway architecture that connects to multiple chat platforms. Key features:
 
-- **Control UI** - Web-based chat interface at the gateway
+- **Control UI** - Web-based chat interface at the gateway 
 - **Multi-channel support** - Telegram, Discord, Slack
 - **Device pairing** - Secure DM authentication requiring explicit approval
 - **Persistent conversations** - Chat history and context across sessions
