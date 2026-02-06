@@ -1,0 +1,23 @@
+name: Bot Update
+
+on: [push]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Zu Cloudflare senden
+    steps:
+      - uses: actions/checkout@v4
+      - name: Installieren & Hochladen
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          secrets: |
+            ANTHROPIC_API_KEY
+            R2_ACCESS_KEY_ID
+            R2_SECRET_ACCESS_KEY
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
