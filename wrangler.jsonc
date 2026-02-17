@@ -4,9 +4,9 @@
   "main": "src/index.ts",
   "compatibility_date": "2025-05-06",
   "compatibility_flags": ["nodejs_compat"],
-"preview_urls": false
+"preview_urls": false,
   "observability": {
-    "enabled": true,
+    "enabled": true
   },
   // Static assets for admin UI (built by vite)
   "assets": {
